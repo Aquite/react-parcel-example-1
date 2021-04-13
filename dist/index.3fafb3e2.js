@@ -26273,18 +26273,58 @@ try {
   var _react = require("react");
   var _reactDefault = _parcelHelpers.interopDefault(_react);
   var _jsxFileName = "C:\\Users\\Pavel\\Desktop\\INFO\\474\\react-parcel-example-1\\src\\App.js";
-  function App() {
+  const viewHeight = 500;
+  const viewWidth = 500;
+  const App = () => {
     return (
-      /*#__PURE__*/_reactDefault.default.createElement("div", {
-        __self: this,
+      /*#__PURE__*/_reactDefault.default.createElement("svg", {
+        style: {
+          border: "1px solid pink",
+          width: viewWidth,
+          height: viewHeight
+        },
+        __self: undefined,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 4,
-          columnNumber: 12
+          lineNumber: 9,
+          columnNumber: 5
         }
-      }, "hello world from react")
+      }, /*#__PURE__*/_reactDefault.default.createElement("circle", {
+        cx: 20,
+        cy: 20,
+        r: "5",
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 10,
+          columnNumber: 9
+        }
+      }), /*#__PURE__*/_reactDefault.default.createElement("rect", {
+        x: "200",
+        y: "200",
+        width: "10",
+        height: "10",
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 11,
+          columnNumber: 9
+        }
+      }), /*#__PURE__*/_reactDefault.default.createElement("line", {
+        x1: 0,
+        y1: viewHeight,
+        x2: 150,
+        y2: 100,
+        stroke: "black",
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 12,
+          columnNumber: 9
+        }
+      }))
     );
-  }
+  };
   _c = App;
   exports.default = App;
   var _c;
