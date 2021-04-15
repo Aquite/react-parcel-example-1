@@ -1,9 +1,8 @@
 import React from "react";
-
+import {csv} from "d3-fetch";
 
 const App = () => {
-  fetch("https://raw.githubusercontent.com/Aquite/react-parcel-example-1/main/weather.csv")
-    .then(response => response.json())
+  csv("https://raw.githubusercontent.com/Aquite/react-parcel-example-1/main/weather.csv")
     .then((data) => console.log(data))
 
   return (
