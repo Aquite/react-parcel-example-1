@@ -1,14 +1,17 @@
 import React from "react";
 import {csv} from "d3-fetch";
+import {useFetch} from "./hooks/useFetch";
 
 const App = () => {
-  csv("https://raw.githubusercontent.com/Aquite/react-parcel-example-1/main/weather.csv")
-    .then((data) => console.log(data))
+  /* THIS GOES IN APP.JS */
+const [data, loading] = useFetch(
+    "https://raw.githubusercontent.com/Aquite/react-parcel-example-1/main/weather.csv"
+  );
 
   return (
     <div>
       <h1>Exploratory Data Analysis, Assignment 2, INFO 474 SP 2021</h1>
-      <p>test comment</p>
+      <p>{loading && "loading data!" }</p>
     </div>
   );
 }
