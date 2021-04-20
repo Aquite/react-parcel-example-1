@@ -8,6 +8,7 @@ const App = () => {
   return (
     <div>
       <h1>Exploratory Data Analysis, Assignment 2, INFO 474 SP 2021</h1>
+      <p>test comment</p>
     </div>
   );
 }
